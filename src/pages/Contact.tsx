@@ -1,6 +1,6 @@
 import { Seo } from "@/components/Seo";
-import { BookingForm } from "@/components/forms/BookingForm";
-import { FreebieForm } from "@/components/forms/FreebieForm";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -15,15 +15,19 @@ const Contact = () => {
             <h2 className="text-xl font-semibold">Book a Call</h2>
             <p className="mt-1 text-muted-foreground text-sm">Quick intro to see if we’re a fit.</p>
             <div className="mt-6">
-              <BookingForm />
+              <Button asChild variant="hero" size="lg">
+                <Link to="/book-call" aria-label="Book a call">Book a Call</Link>
+              </Button>
             </div>
           </section>
 
           <section id="freebies" className="rounded-lg border p-6">
-            <h2 className="text-xl font-semibold">Claim Free GMB Optimization</h2>
+            <h2 className="text-xl font-semibold">Claim Free Visibility Boost</h2>
             <p className="mt-1 text-muted-foreground text-sm">We’ll optimize your local presence. No strings attached.</p>
             <div className="mt-6">
-              <FreebieForm />
+              <Button asChild variant="goldOutline" size="lg">
+                <Link to="/claim-freebies" aria-label="Claim your free visibility boost">Claim Now</Link>
+              </Button>
             </div>
           </section>
         </div>

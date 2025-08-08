@@ -1,7 +1,6 @@
 import { Seo } from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { FreebieForm } from "@/components/forms/FreebieForm";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -18,7 +17,7 @@ const Index = () => {
     <>
       <Seo
         title="Collision Catalyst — Growth Partner for Auto Body Shops"
-        description="We fill your bays with high‑value jobs. Trusted by 14+ shops across the US. We only work with 1 shop per zip code."
+        description="We fill your bays with high‑value jobs. Trusted by 14+ shops across the US. We only work with 1 shop per zip code. Contact +1 (917) 310-0122 or daim@collisioncatalyst.com." 
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({
@@ -44,10 +43,10 @@ const Index = () => {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Button asChild variant="hero" size="xl">
-                  <Link to="/contact#book">Check Availability Now</Link>
+                  <Link to="/book-call">Check Availability Now</Link>
                 </Button>
                 <Button asChild variant="goldOutline" size="xl">
-                  <Link to="/contact#freebies">Claim Free GMB Optimization</Link>
+                  <Link to="/claim-freebies">Claim Free Visibility Boost</Link>
                 </Button>
               </div>
               <div className="mt-8 text-sm text-muted-foreground">
@@ -75,6 +74,11 @@ const Index = () => {
               <p className="mt-4 text-muted-foreground">
                 We partner with one shop per zip code and install a simple growth system that brings in premium jobs consistently. No jargon. No guesswork. Just measurable results and transparent communication.
               </p>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li>• Consistent pipeline of high‑value repair jobs</li>
+                <li>• Clear reporting and weekly check‑ins</li>
+                <li>• Fair, performance‑aligned partnership</li>
+              </ul>
               <div className="mt-6">
                 <Button asChild variant="hero" size="lg">
                   <Link to="/process">See Our Process</Link>
@@ -111,9 +115,11 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-bold">Free Local Visibility Boost</h2>
               <p className="mt-3 text-muted-foreground">We’ll optimize your local presence so premium jobs find you. No catch. We do this first to earn your trust.</p>
-            </div>
-            <div className="mt-10 max-w-4xl mx-auto">
-              <FreebieForm />
+              <div className="mt-6">
+                <Button asChild variant="goldOutline" size="lg">
+                  <Link to="/claim-freebies">Claim Your Free Visibility Boost</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -125,10 +131,10 @@ const Index = () => {
             <p className="mt-3 text-muted-foreground">Check availability in your area now.</p>
             <div className="mt-6 flex items-center justify-center gap-3">
               <Button asChild variant="hero" size="lg">
-                <Link to="/contact#book">Book a Call</Link>
+                <Link to="/book-call">Book a Call</Link>
               </Button>
               <Button asChild variant="goldOutline" size="lg">
-                <Link to="/contact#freebies">Claim Freebies</Link>
+                <Link to="/claim-freebies">Claim Your Free Visibility Boost</Link>
               </Button>
             </div>
           </div>

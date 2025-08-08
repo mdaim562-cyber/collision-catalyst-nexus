@@ -77,7 +77,7 @@ export const FreebieForm = () => {
       </div>
       <div className="md:col-span-2">
         <Button type="submit" variant="hero" size="lg" disabled={isSubmitting} className="w-full">
-          {isSubmitting ? "Submitting..." : "Claim Free GMB Optimization"}
+          {isSubmitting ? "Submitting..." : "Claim Your Free Visibility Boost"}
         </Button>
         <p className="mt-2 text-xs text-muted-foreground">We only work with one shop per zip code — check availability now.</p>
       </div>
