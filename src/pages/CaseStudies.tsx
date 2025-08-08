@@ -5,11 +5,11 @@ const CaseStudies = () => {
   const items = Array.from({ length: 4 }).map((_, i) => ({ id: i + 1 }));
   return (
     <>
-      <Seo title="Case Studies — Collision Catalyst" description="Real results from partner shops across the US." />
+      <Seo title="Case Studies - Collision Catalyst" description="Real results from partner shops across the US." />
       <main className="container mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-center">Case Studies</h1>
         <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-          A snapshot of outcomes created with our partners. Specific tactics are intentionally hidden — the numbers speak for themselves.
+          A snapshot of outcomes created with our partners. Specific tactics are intentionally hidden - the numbers speak for themselves.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">

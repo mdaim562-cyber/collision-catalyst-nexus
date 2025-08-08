@@ -27,11 +27,11 @@ const steps = [
 const Process = () => {
   return (
     <>
-      <Seo title="Our Process — Collision Catalyst" description="How we deliver consistent, high‑value jobs without the fluff." />
+      <Seo title="Our Process - Collision Catalyst" description="How we deliver consistent, high‑value jobs without the fluff." />
       <main className="container mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-center">Our Process</h1>
         <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-          Step‑by‑step breakdown of how we get results — without revealing the secret sauce.
+          Step‑by‑step breakdown of how we get results - without revealing the secret sauce.
         </p>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {steps.map((s, idx) => (

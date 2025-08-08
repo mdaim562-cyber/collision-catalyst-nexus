@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <>
       <Seo
-        title="Collision Catalyst — Growth Partner for Auto Body Shops"
+        title="Collision Catalyst - Growth Partner for Auto Body Shops"
         description="We fill your bays with high‑value jobs. Trusted by 14+ shops across the US. We only work with 1 shop per zip code. Contact +1 (917) 310-0122 or daim@collisioncatalyst.com." 
       />
       <Helmet>
@@ -25,7 +25,7 @@ const Index = () => {
           '@type': 'Organization',
           name: 'Collision Catalyst',
           url: typeof window !== 'undefined' ? window.location.origin : 'https://collisioncatalyst.com',
-          logo: '/lovable-uploads/6f2c0140-6f49-401f-867e-79571513aeed.png',
+          logo: '/lovable-uploads/6011a394-32be-43f4-a53c-7f41776849fe.png',
           sameAs: [],
           description: 'Exclusive growth partner for auto body shops. We fill your bays with high‑value jobs.'
         })}</script>
@@ -34,23 +34,32 @@ const Index = () => {
         {/* Hero */}
         <section className="relative overflow-hidden">
           <div onMouseMove={onMouseMove} className="spotlight">
+            <div className="absolute inset-0 -z-10">
+              <img
+                src="/lovable-uploads/bb66d540-32be-43f4-a53c-7f41776849fe.png"
+                alt="Auto body shop office with relaxed manager and busy workshop"
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-background/80" />
+            </div>
             <div className="container mx-auto px-4 py-24 md:py-32 text-center">
               <h1 className="font-extrabold text-4xl md:text-6xl leading-tight tracking-tight">
-                We Fill Your Bays With High‑Value Jobs — Without You Wasting Time, Money, or Energy on Fluff.
+                We Fill Your Bays With High‑Value Jobs - Without Wasting Time, Money, or Energy
               </h1>
               <p className="mt-5 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Trusted by 14+ Auto Body Shops across the US — without them hiring marketing agencies, spending $10,000+ on ads, or waiting weeks for leads.
+                Trusted by 14+ Auto Body Shops across the US - without hiring agencies, burning $10,000+ on ads, or waiting weeks for leads.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Button asChild variant="hero" size="xl">
+                <Button asChild variant="hero" size="xl" className="shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow-strong)]">
                   <Link to="/book-call">Check Availability Now</Link>
                 </Button>
-                <Button asChild variant="goldOutline" size="xl">
+                <Button asChild variant="goldOutline" size="xl" className="hover:shadow-[var(--shadow-glow)]">
                   <Link to="/claim-freebies">Claim Free Visibility Boost</Link>
                 </Button>
               </div>
               <div className="mt-8 text-sm text-muted-foreground">
-                <span className="font-semibold">Guarantee:</span> We’ll help you add $50,000+ in new revenue within 90 days — or you don’t pay until you see it working.
+                <span className="font-semibold">Guarantee:</span> We’ll help you add $50,000+ in new revenue within 90 days - or you don’t pay until it works.
               </div>
               <div className="mt-6 text-xs uppercase tracking-wide text-muted-foreground">Trusted by 14+ Auto Body Shops across the US</div>
             </div>
@@ -94,7 +103,7 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-center">Highlights</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[1,2,3].map((i) => (
-                <div key={i} className="rounded-lg border p-6 hover:shadow-[var(--shadow-glow)] transition-shadow">
+                <div key={i} className="rounded-lg border p-6 shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow-strong)] transition-shadow animate-fade-in hover-scale">
                   <img src="/placeholder.svg" alt={`Case study ${i} result`} className="w-full h-40 object-cover rounded" loading="lazy" />
                   <div className="mt-4 text-sm text-muted-foreground">Collision shop · Midwest</div>
                   <div className="mt-1 font-semibold">+$18,400 in 30 days · 27 high‑value jobs</div>

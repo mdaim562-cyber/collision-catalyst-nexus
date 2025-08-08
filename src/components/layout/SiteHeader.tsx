@@ -15,7 +15,7 @@ export const SiteHeader = () => {
       <div className="container mx-auto grid grid-cols-3 h-16 items-center px-4">
         <Link to="/" className="flex items-center gap-2 justify-self-start">
           <img
-            src="/lovable-uploads/6f2c0140-6f49-401f-867e-79571513aeed.png"
+            src="/lovable-uploads/6011a394-32be-43f4-a53c-7f41776849fe.png"
             alt="Collision Catalyst logo black and gold"
             className="h-8 w-auto"
             loading="eager"
@@ -38,10 +38,10 @@ export const SiteHeader = () => {
         </nav>
 
         <div className="flex items-center gap-2 justify-self-end">
-          <Button asChild variant="hero" size="lg" className="shadow-[var(--shadow-glow)]">
-            <Link to="/claim-freebies" aria-label="Check availability in your zip code">
-              Check Availability
-            </Link>
+          <Button asChild variant="hero" size="lg" className="shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-glow-strong)]">
+            <a href="tel:+19173100122" aria-label="Call Collision Catalyst">
+              +1 (917) 310-0122
+            </a>
           </Button>
         </div>
       </div>
